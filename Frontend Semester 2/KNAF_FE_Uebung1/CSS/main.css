@@ -1,0 +1,42 @@
+body {
+    padding: 8px;
+    background-color: #f2f2f2;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-50 {
+    flex: 50%;
+    padding: 0 16px;
+}
+
+.container {
+    font-family: 'Syne Mono', monospace;
+    background-color: #FAEBD7;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: tomato;
+    color: white;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}

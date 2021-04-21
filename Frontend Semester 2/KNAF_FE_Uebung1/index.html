@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <title>Bestellformular</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <h1>Bootstrap Bestellformular 2.0</h1>
+        <a class="cv" href="CV/KNAF_Uebung1/Lebenslauf.html">Hier kommen Sie zu meinem Lebenslauf</a>
+    </div>
+</nav>
+<br>
+<!-- Form container-->
+<div class="container">
+    <form action="/action_page.php">
+        <div class="row">
+            <!-- Left side column -->
+            <div class="col-50">
+                <h3>Rechnungsadresse</h3>
+                <hr>
+                <label>Anrede</label>
+                <div class="card-container">
+                    <input type="radio" id="female" value="female" name="sex">
+                    <label for="female">Frau</label>
+                    <input type="radio" id="male" value="male" name="sex">
+                    <label for="male">Herr</label>
+                </div>
+                <label for="fullname">Vor- & Nachname</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Max Mustermann">
+                <label for="email"> E-Mail-Adresse</label>
+                <input type="text" id="email" name="email" placeholder="max@mustermann.at">
+                <label for="address"> Addresse</label>
+                <input type="text" id="address" name="address" placeholder="Musteradresse 123">
+                <div class="row">
+                    <div class="col-50">
+                        <label for="ort">Ort</label>
+                        <input type="text" id="ort" name="ort" placeholder="Wien">
+                    </div>
+                    <div class="col-50">
+                        <label for="plz">PLZ</label>
+                        <input type="text" id="plz" name="plz" placeholder="1150">
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameaddress"> Versenden an Rechnungsadresse
+                </label>
+            </div>
+            <!-- right side column-->
+            <div class="col-50">
+                <h3>Bezahlung</h3>
+                <hr>
+                <label>Kreditkarten</label>
+                <div class="card-container">
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="visa" value="visa" name="card">
+                    <label for="mastercard">Mastercard</label>
+                    <input type="radio" id="mastercard" value="mastercard" name="card">
+                    <label for="amex">American Express</label>
+                    <input type="radio" id="amex" value="ames" name="card">
+                </div>
+                <label for="cardname">Name des Kreditkarteninhabers</label>
+                <input type="text" id="cardname" name="cardname" placeholder="Max Mustermann">
+                <label for="cardnum">Kreditkartennummer</label>
+                <input type="text" id="cardnum" name="cardnum" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Ablaufmonat</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="Juni">
+                <div class="row">
+                    <div class="col-50">
+                        <label for="expyear">Ablaufjahr</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2024">
+                    </div>
+                    <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="312">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- checkbox dsgvo-->
+        <div class="container">
+            <label>
+                <input type="checkbox" name="age"> Ich bin 16 Jahre oder älter
+                <br>
+                <input type="checkbox" name="agb"> Ich habe die <b>Allgemeinen Geschäftsbedinungen</b> gelesen und
+                anerkannt
+                <br>
+                <input type="checkbox" name="dsgvo"> Ich bin damit einverstanden, dass meine E-Mail-Adresse und
+                Telefonnummer
+                an den in der Datenschutzerklärung aufgelisteten Versanddienstleister weitergegeben wird, damit der
+                Versanddienstleister
+                Statusinformationen zur Sendungszustellung an mich per E-Mail übermitteln kann.
+                Meine diesbezüglich erteilte Einwilligung kann Ich jederzeit widerufen
+            </label>
+        </div>
+        <input type="submit" value="Weiter zum Checkout!" class="btn">
+    </form>
+</div>
+</body>
+</html>
