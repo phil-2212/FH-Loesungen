@@ -1,3 +1,6 @@
 .container {
   margin-top: 50px;
 }
+.horizontal-spacing {
+  padding: 0 10px;
+}

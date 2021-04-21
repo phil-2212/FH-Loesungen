@@ -16,5 +16,3 @@ $(document).ready(function () {
 
 // TODO: Ajax extra (?)
 // TODO: fillRow Lammer --> outsource this
-
-// TODO: Recursive function

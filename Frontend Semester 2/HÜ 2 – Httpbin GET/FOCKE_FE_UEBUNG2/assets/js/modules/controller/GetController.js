@@ -13,9 +13,10 @@ class GetController {
 
       const model = new JsonModel();
       model.pushToDataList(data);
-      model.tryItOut(data);
+      model.dataEdit(data);
 
-      let view = model.returnData();
+      // pretty sweet, i feel ;-)
+      let view = model.allCharacters;
 
       const outputView = new ListView();
       outputView.setView(view);

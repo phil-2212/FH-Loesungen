@@ -1,6 +1,7 @@
 class JsonModel {
 
   constructor() {
+    this.allCharacters = [];
   }
 
   pushToDataList(data) {
@@ -11,13 +12,9 @@ class JsonModel {
 
       // TODO: RECURSIVE
 
-      if(typeof data[value] !== 'object') {
+      if(typeof data[value] /* !== 'object' */) {
         outputList.push(value);
         outputList.push(data[value]);
-      } else {
-        let newKey = data[value];
-        outputList.push(newKey);
-        outputList.push(newKey[value]);
       }
 
     }
@@ -25,8 +22,18 @@ class JsonModel {
     this.outputList = outputList;
   }
 
-  tryItOut(data) {
-    console.log(data);
+  dataEdit(data) {
+
+    for (let [key, value] of Object.entries(data)) {
+
+      if(typeof value === 'object') {
+        this.dataEdit(value);
+      } else {
+        this.allCharacters.push(key);
+        this.allCharacters.push(value);
+      }
+
+    }
   }
 
   returnData() {
