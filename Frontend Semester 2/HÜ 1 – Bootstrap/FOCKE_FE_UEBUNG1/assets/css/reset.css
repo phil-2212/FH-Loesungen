@@ -1,0 +1,17 @@
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+select {
+  color: grey !important; /* needed for overriding */
+}
+.grey-text, small, select {
+  color: grey;
+}
+p, label, .accordion-button {
+  color: blue;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+}

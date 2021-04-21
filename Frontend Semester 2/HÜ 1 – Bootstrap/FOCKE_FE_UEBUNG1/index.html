@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Everyday Bikes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="container px-4">
+        <div class="row gx-5 gy-5">
+            <div class="col-sm-6 order-2 order-md-1">
+                <h2><strong>Everyday Bikes</strong></h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item grey-text">Checkout</li>
+                        <li class="breadcrumb-item active grey-text"><u>Information</u></li>
+                        <li class="breadcrumb-item grey-text" aria-current="page">Payment</li>
+                    </ol>
+                </nav>
+
+                <br>
+
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Contact Information</label>
+                        <input type="email" class="form-control" id="email-input" placeholder="Email">
+                        <label><small>For receiving billing and tracking details</small></label>
+                    </div>
+
+                    <br>
+
+                    <div class="mb-3">
+                        <label class="form-label">Delivery method</label>
+                        <select class="form-select form-text" id="delivery-input" aria-label="Default select example">
+      <option selected>Choose method</option>
+      <option value="1">Standard</option>
+      <option value="2">Worldwide</option>
+      </select>
+                    </div>
+                </form>
+
+                <br>
+
+                <div class="col-12">
+                    <label class="form-label">Shipping address</label>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" id="first-name-input" placeholder="First name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" id="last-name-input" placeholder="Last name">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="address-input" placeholder="Street and house number">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="address2-input" placeholder="Additional address (optional)">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="city-input" placeholder="Postal code">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="state-input" placeholder="City">
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select" id="country-input" aria-label="Default select example">
+      <option selected>Choose country</option>
+      <option value="1">Austria</option>
+      <option value="2">Germany</option>
+      <option value="3">Lesotho</option>
+      <option value="4">Rest of World</option>
+      </select>
+                        </div>
+                </div>
+
+                <br>
+
+                <div class="col-12">
+                    <div class="col-md-12 form-check">
+                        <input type="checkbox" class="form-check-input" id="data-input">
+                        <label class="form-check-label" for="data-input">I'm good with giving away all my data.</label>
+                    </div>
+                    <div class="col-md-12 form-check">
+                        <input type="checkbox" class="form-check-input" id="age-input">
+                        <label class="form-check-label" for="age-input">I'm over 16 years old.</label>
+                    </div>
+                </div>
+                </form>
+                <br>
+                <hr>
+
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-Light grey-text text-nowrap">Back to store</button>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-dark btn-lg text-nowrap">Proceed to payment</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Left half -->
+
+            <div class="col-sm-6 order-1 order-md-2">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Your Basket
+      </button>
+                        </h2>
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <div class="row g-3">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/b01.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>B01 Street Conquerer:
+                                            <br><small>No brakes, can't stop. Don't want to.</small></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="badge rounded-pill bg-dark float-end">800 €</span>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row g-3">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/b02.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>B07 Eagle Swift:
+                                            <br><small>Dancing utility. Off the walls.</small></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="badge rounded-pill bg-dark float-end">1200 €</span>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row g-3">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/b03.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>B04 Public Possession:
+                                            <br><small>Nice bike, suited for everyday rides.</small></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="badge rounded-pill bg-dark float-end">550 €</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <h6 class="grey-text">Subtotal:</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="float-end grey-text">2550 €</h6>
+                    </div>
+                    <div class="col-md-8">
+                        <h6 class="grey-text">Shipping:</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="float-end grey-text">50 €</h6>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <h3 class="grey-text">Total:</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="float-end"><strong>2600 €</strong></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Right half -->
+        </div>
+        <!-- Row -->
+    </div>
+    <!-- Container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+Diese Übung erinnert mich stark an den Abschlusstest von Java aus dem ersten Semester: Viele Klassen, Getters+Setters und Methoden mit private/public access. Ich habe das Beispiel aus der LV angepasst und mir überlegt, wie ich gleich damit arbeiten kann. That's it. Ich habe lange gebraucht, es wirklich zu begreifen, aber mittlerweile surfe ich wie ein Kenner durch "meinen" Code.
