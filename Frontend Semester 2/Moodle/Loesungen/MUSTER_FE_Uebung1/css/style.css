@@ -1,0 +1,53 @@
+/* 
+    Created on : 19.03.2019, 14:06:02
+    Author     : helmuth
+*/
+
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    background-color: #efefef;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #71787d;
+}
+
+h1{
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00649c;
+}
+
+section.header-bar{
+    background: #fff;
+    color: #8bb111;
+}
+
+img#img-right-col{
+    
+    float: right;
+    margin-left: 15px;
+    
+    padding: 3px;
+    border: 1px solid #00649c;
+    
+    
+}
