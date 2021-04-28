@@ -12,7 +12,6 @@ class GetController {
       let outputList = [];
 
       const model = new JsonModel();
-      model.pushToDataList(data);
       model.dataEdit(data);
 
       // pretty sweet, i feel ;-)

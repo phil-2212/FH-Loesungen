@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+hr {
+  border-top: 1px solid grey;
+}
+/*
+Visual UI elements
+*/
+.container {
+  margin-top: 50px;
+}
+.navbar {
+  min-height: 60px;
+}
+/*
+Other
+*/
+.no-margin {
+  margin: 0;
+}
+/*
+Borders
+*/
+.bg-lightgrey {
+  background-color: #e9ecef;
+}
+.border-lightgrey {
+  border: 1px solid #e9ecef;
+}
+/*
+Custom sections
+*/
+.output {
+  height: 50vh;
+  overflow-y: scroll;
+}
