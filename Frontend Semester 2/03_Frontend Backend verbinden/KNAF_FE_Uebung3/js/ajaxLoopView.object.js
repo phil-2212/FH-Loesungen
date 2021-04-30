@@ -5,6 +5,8 @@ class AjaxLoopView{
         let self = this;
 
         self.toggleForWhile();
+        self.buttonLockOnEmptyInput();
+
         $('#trigger-request').on("click", function(){
             self.getAjaxRequest();
         });
@@ -16,12 +18,35 @@ class AjaxLoopView{
             if ( this.value === 'until')
 
             {
+                $("#trigger-request").attr("disabled", true);
                 $("#toggle-input-while").show();
             }
             else {
                 $("#toggle-input-while").hide();
+                $("#trigger-request").attr("disabled", false);
             }
         });
+    }
+
+    buttonLockOnEmptyInput() {
+
+        $('#input-while').keyup(function () {
+
+            let empty = false;
+            $('#input-while').each(function () {
+                if (this.value.length === 0) {
+                    empty = true;
+                }
+            });
+
+            if (empty) {
+                $('#trigger-request').attr('disabled', true);
+
+            } else {
+                $('#trigger-request').attr('disabled', false);
+            }
+        });
+
     }
 
     getLoopInput(){
@@ -29,7 +54,7 @@ class AjaxLoopView{
         let loopType =  $('#loopType').val();
         let untilCharacter = $('#input-while').val();
 
-        if (loopType === "until" /*&& untilCharacter */) {
+        if (loopType === "until") {
             return loopType + "&until=" + untilCharacter;
         }
         else
