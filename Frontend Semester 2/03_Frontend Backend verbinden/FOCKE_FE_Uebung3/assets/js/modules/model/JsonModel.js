@@ -3,6 +3,7 @@ class JsonModel {
     this.allCharacters = [];
   }
 
+  // TODO: every() maybe?
   dataEdit(data) {
     for (let [key, value] of Object.entries(data)) {
       if (typeof value === 'object') {

@@ -1,4 +1,4 @@
-import { GetController, JsonModel, ListView } from './config.js';
+import { GetRequestController } from './modules/controller/GetRequestController.js';
 
 // TODO: Place it somehwere else – where does it make sense?
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -6,17 +6,25 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
-const listCreateButton = document.querySelector('.listCreateButton');
-
 $(document).ready(function () {
+  $('form').submit(function (event) {
+    const formData = {
+      loopType: $('#loopType').val(),
+      until: $('#until').val(),
+    };
 
-  listCreateButton.addEventListener('click', () => {
+    $.ajax({
+      type: 'POST',
+      url: './assets/php/controller/UserInputController.php',
+      data: formData,
+    }).done(function (data) {
 
-    const controller = new GetController();
-    controller.jsonDataHandle();
+      $('#result-info').append(`${data}`);
 
+      const controller = new GetRequestController();
+      controller.jsonDataHandle();
+    });
+
+    event.preventDefault();
   });
-
 });
-
-// TODO: .mjs implementation

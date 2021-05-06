@@ -1,6 +1,6 @@
 <?php
 
-class Loop
+class LoopController
 {
   private $charactersFromData;
   private $characters;
@@ -21,8 +21,7 @@ class Loop
   {
     $this->charactersFromData = array();
 
-    // TODO: MOre awesome file path
-    $json = file_get_contents("../../data/characters.json");
+    $json = file_get_contents("../../data/characters.json"); /* TODO: Maybe change at some point */
     $dataObject = json_decode($json);
 
     foreach ($dataObject->characters as $character) {

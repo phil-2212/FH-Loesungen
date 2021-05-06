@@ -9,7 +9,6 @@ class LoopModel
     $this->characters = $characters;
   }
 
-  // Remember: Java frist semester same procedure
   public function getCharacters()
   {
     return $this->characters;
@@ -19,7 +18,6 @@ class LoopModel
     $this->characters = $characters;
   }
 
-  // Methods that BELONG to this model (!) --> to be used ON this very object
   public function LoopEven()
   {
     $tempCharacters = array();
