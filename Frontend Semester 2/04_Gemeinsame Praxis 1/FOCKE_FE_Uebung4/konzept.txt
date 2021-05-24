@@ -1,0 +1,4 @@
+Ich habe mir leider zu wenig Zeit gegeben, um die HÜ fertiggestellt abgeben zu können.
+Die letzte Einheit habe ich verpasst, die Umsetzung fiel mir demenstprechend schwer.
+
+PDO und MVC sind nicht so, wie ich sie haben will.
