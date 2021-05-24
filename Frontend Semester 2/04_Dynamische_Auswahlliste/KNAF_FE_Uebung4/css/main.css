@@ -1,0 +1,27 @@
+body{
+    margin-top: 2em;
+    padding: 8px;
+    background-color: #f2f2f2;
+    text-transform: capitalize;
+    text-shadow: 0 0 black;
+}
+
+label {
+    display: block;
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+select {
+    font-size: inherit;
+    padding: .6em 1.4em .5em .8em;
+    width: 20em;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: .5em;
+    background: #e7e7e7;
+}
+
+
